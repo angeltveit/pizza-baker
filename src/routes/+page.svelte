@@ -297,7 +297,7 @@ ${ingredients.map((ingredient) => {
     </div>
 
     <h1 class="text-xl">Ingredienser:</h1>
-    {#each Array.from(recipe).sort((a,b) =>a.layer - b.layer) as ingredient}
+    {#each recipe as ingredient}
       <ul>
         <li>{ingredient.name}</li>
       </ul>
